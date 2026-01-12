@@ -1,0 +1,11 @@
+[
+  {
+    "id": "news-1",
+    "date": "2025-12-15",
+    "title": "Paper Accepted at ICEDGE 2025",
+    "description": "Our paper on 'Energy-Efficient In-Memory Computing Architectures for Deep Learning Inference' has been accepted at the International Symposium on Computer Architecture (ISCA) 2026.",
+    "link": "https://example.com/isca-2026",
+    "type": "publication",
+    "pinned": false
+  }
+]
