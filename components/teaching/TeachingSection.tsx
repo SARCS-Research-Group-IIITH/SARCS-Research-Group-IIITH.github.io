@@ -118,15 +118,13 @@ function CourseItem({ course, semester }: { course: Course; semester: string }) 
  * Simple heading with courses listed underneath
  */
 function AcademicYearSection({ academicYear }: { academicYear: AcademicYear }) {
-  // Sort semesters: Monsoon first, then Spring
-  const sortedSemesters = [...academicYear.semesters].sort((a, b) => {
-    if (a.name === 'Monsoon') return -1;
-    if (b.name === 'Monsoon') return 1;
-    return 0;
-  });
+  // Group semesters: Spring first, then Monsoon, preserving original order within each group
+  const springSemesters = academicYear.semesters.filter(s => s.name === 'Spring');
+  const monsoonSemesters = academicYear.semesters.filter(s => s.name === 'Monsoon');
+  const orderedSemesters = [...springSemesters, ...monsoonSemesters];
 
   // Flatten courses with semester info
-  const allCourses = sortedSemesters.flatMap(semester => 
+  const allCourses = orderedSemesters.flatMap(semester => 
     semester.courses.map(course => ({ course, semester: semester.name }))
   );
 

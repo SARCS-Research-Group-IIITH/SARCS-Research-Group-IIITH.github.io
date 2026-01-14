@@ -29,9 +29,9 @@
           "name": "Monsoon",
           "courses": [
             {
-              "code": "OC3.101",
-              "name": "Value Education",
-              "faculty": ["Priyesh Shukla", "and others"],
+              "code": "CS2.502",
+              "name": "Hardware for AI",
+              "faculty": ["Priyesh Shukla", "Suresh Purini", "Girish Varma"],
               "link": null
             }
           ]
@@ -51,9 +51,9 @@
           "name": "Monsoon",
           "courses": [
             {
-              "code": "CS2.502",
-              "name": "Hardware for AI",
-              "faculty": ["Priyesh Shukla", "Suresh Purini", "Girish Varma"],
+              "code": "OC3.101",
+              "name": "Value Education",
+              "faculty": ["Priyesh Shukla", "and others"],
               "link": null
             }
           ]
