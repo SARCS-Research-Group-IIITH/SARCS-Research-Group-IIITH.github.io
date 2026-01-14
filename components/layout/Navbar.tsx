@@ -49,6 +49,7 @@ const navItems: NavItem[] = [
 export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -192,7 +193,7 @@ export function Navbar() {
                     // Mobile dropdown
                     <>
                       <button
-                        onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                        onClick={() => setIsMobileDropdownOpen(!isMobileDropdownOpen)}
                         className={`flex w-full items-center justify-between rounded-lg px-4 py-2 text-sm font-medium ${
                           isActive(item.href)
                             ? 'text-primary-600 dark:text-primary-400'
@@ -201,16 +202,20 @@ export function Navbar() {
                       >
                         {item.label}
                         <ChevronDown
-                          className={`h-4 w-4 transition-transform ${isDropdownOpen ? 'rotate-180' : ''}`}
+                          className={`h-4 w-4 transition-transform ${isMobileDropdownOpen ? 'rotate-180' : ''}`}
                         />
                       </button>
                       
-                      {isDropdownOpen && (
+                      {isMobileDropdownOpen && (
                         <div className="ml-4 space-y-1 border-l-2 border-surface-200 pl-4 dark:border-surface-700">
                           {item.children.map((child) => (
                             <Link
                               key={child.href}
                               href={child.href}
+                              onClick={() => {
+                                setIsMobileMenuOpen(false);
+                                setIsMobileDropdownOpen(false);
+                              }}
                               className={`block rounded-lg px-3 py-2 text-sm hover:no-underline ${
                                 pathname === child.href
                                   ? 'text-primary-600 dark:text-primary-400'
@@ -226,6 +231,7 @@ export function Navbar() {
                   ) : (
                     <Link
                       href={item.href}
+                      onClick={() => setIsMobileMenuOpen(false)}
                       className={`block rounded-lg px-4 py-2 text-sm font-medium hover:no-underline ${
                         isActive(item.href)
                           ? 'text-primary-600 dark:text-primary-400'

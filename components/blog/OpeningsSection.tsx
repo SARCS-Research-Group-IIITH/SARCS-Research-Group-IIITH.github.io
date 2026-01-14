@@ -82,66 +82,66 @@ export function OpeningCard({ opening }: OpeningCardProps) {
 
   return (
     <Card className="text-left">
-      <div className="flex flex-wrap items-start justify-between gap-4">
-        <div className="flex-1">
-          {/* Header - Position Type Badge Only */}
-          <div className="mb-2">
-            <Badge variant={typeColors[opening.type] || 'neutral'} size="md">
-              {opening.type}
-            </Badge>
+      <div className="flex flex-col gap-4">
+        {/* Header - Position Type Badge and Title */}
+        <div className="flex items-start justify-between gap-4">
+          <div className="flex-1">
+            <div className="mb-2">
+              <Badge variant={typeColors[opening.type] || 'neutral'} size="md">
+                {opening.type}
+              </Badge>
+            </div>
+            <h4 className="text-lg font-semibold text-surface-900 dark:text-surface-50">
+              {opening.title}
+            </h4>
           </div>
-
-          {/* Title */}
-          <h4 className="mb-2 text-lg font-semibold text-surface-900 dark:text-surface-50">
-            {opening.title}
-          </h4>
-
-          {/* Description */}
-          <p className="mb-4 text-surface-600 dark:text-surface-400">
-            {opening.description}
-          </p>
-
-          {/* Requirements */}
-          {opening.requirements && opening.requirements.length > 0 && (
-            <div className="mb-4">
-              <h5 className="mb-2 text-sm font-medium text-surface-700 dark:text-surface-300">
-                Requirements:
-              </h5>
-              <ul className="space-y-1">
-                {opening.requirements.map((req, index) => (
-                  <li
-                    key={index}
-                    className="flex items-start gap-2 text-sm text-surface-600 dark:text-surface-400"
-                  >
-                    <CheckCircle className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary-500" />
-                    {req}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-
-          {/* Deadline */}
-          {formattedDeadline && (
-            <div className="flex items-center gap-2 text-sm text-surface-500 dark:text-surface-400">
-              <Calendar className="h-4 w-4" />
-              Application deadline: {formattedDeadline}
-            </div>
+          
+          {/* Apply button */}
+          {opening.contactEmail && (
+            <Button
+              as="link"
+              href={`mailto:${opening.contactEmail}?subject=Application: ${opening.title}`}
+              variant="primary"
+              size="md"
+              leftIcon={<Mail className="h-4 w-4" />}
+              external
+            >
+              Apply Now
+            </Button>
           )}
         </div>
 
-        {/* Apply button */}
-        {opening.contactEmail && (
-          <Button
-            as="link"
-            href={`mailto:${opening.contactEmail}?subject=Application: ${opening.title}`}
-            variant="primary"
-            size="md"
-            leftIcon={<Mail className="h-4 w-4" />}
-            external
-          >
-            Apply Now
-          </Button>
+        {/* Description */}
+        <p className="text-surface-600 dark:text-surface-400">
+          {opening.description}
+        </p>
+
+        {/* Requirements */}
+        {opening.requirements && opening.requirements.length > 0 && (
+          <div>
+            <h5 className="mb-2 text-sm font-medium text-surface-700 dark:text-surface-300">
+              Requirements:
+            </h5>
+            <ul className="space-y-1">
+              {opening.requirements.map((req, index) => (
+                <li
+                  key={index}
+                  className="flex items-start gap-2 text-sm text-surface-600 dark:text-surface-400"
+                >
+                  <CheckCircle className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary-500" />
+                  {req}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {/* Deadline */}
+        {formattedDeadline && (
+          <div className="flex items-center gap-2 text-sm text-surface-500 dark:text-surface-400">
+            <Calendar className="h-4 w-4" />
+            Application deadline: {formattedDeadline}
+          </div>
         )}
       </div>
     </Card>
