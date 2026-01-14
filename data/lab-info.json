@@ -24,6 +24,11 @@
         "name": "IIIT Hyderabad",
         "logo": "/images/affiliations/IIIT_Hyderabad_Logo.jpg",
         "url": "https://www.iiit.ac.in/"
+      },
+      {
+        "name": "CVEST",
+        "logo": "/images/affiliations/CVEST_Logo.png",
+        "url": "https://cvest.iiit.ac.in/"
       }
     ]
   }
