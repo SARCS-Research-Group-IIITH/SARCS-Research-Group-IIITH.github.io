@@ -57,29 +57,9 @@ export function HeroSection({ labName, fullName, mission, logoSrc, backgroundIma
           </p>
 
           {/* Mission Statement */}
-          <p className="mx-auto mb-8 max-w-3xl text-lg leading-relaxed text-surface-200">
+          <p className="mx-auto max-w-3xl text-lg leading-relaxed text-surface-200">
             {mission}
           </p>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Button
-              as="link"
-              href="/projects"
-              size="lg"
-              rightIcon={<ArrowRight className="h-5 w-5" />}
-            >
-              Explore Our Research
-            </Button>
-            <Button
-              as="link"
-              href="/publications"
-              variant="outline"
-              size="lg"
-            >
-              View Publications
-            </Button>
-          </div>
         </div>
       </div>
     </section>

@@ -75,12 +75,13 @@ interface PageHeaderProps {
   title: string;
   description?: string;
   className?: string;
+  compact?: boolean;
 }
 
-export function PageHeader({ title, description, className = '' }: PageHeaderProps) {
+export function PageHeader({ title, description, className = '', compact = false }: PageHeaderProps) {
   return (
     <div className={`bg-surface-100 dark:bg-surface-900 ${className}`}>
-      <div className="container-page py-8 md:py-10">
+      <div className={`container-page ${compact ? 'py-4 md:py-6' : 'py-8 md:py-10'}`}>
         <h1 className="text-2xl font-bold text-surface-900 dark:text-surface-50 md:text-3xl lg:text-4xl">
           {title}
         </h1>

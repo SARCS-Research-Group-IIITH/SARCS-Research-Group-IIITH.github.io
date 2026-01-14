@@ -7,7 +7,7 @@
 
 import { ReactNode } from 'react';
 
-type BadgeVariant = 'primary' | 'secondary' | 'accent' | 'success' | 'warning' | 'error' | 'neutral';
+type BadgeVariant = 'primary' | 'secondary' | 'accent' | 'pink' | 'success' | 'warning' | 'error' | 'neutral';
 type BadgeSize = 'sm' | 'md';
 
 interface BadgeProps {
@@ -39,6 +39,7 @@ export function Badge({
     primary: 'bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300',
     secondary: 'bg-surface-100 text-surface-700 dark:bg-surface-700 dark:text-surface-300',
     accent: 'bg-accent-100 text-accent-700 dark:bg-accent-900/30 dark:text-accent-300',
+    pink: 'bg-pink-100 text-pink-700 dark:bg-pink-900/30 dark:text-pink-300',
     success: 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300',
     warning: 'bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300',
     error: 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300',
@@ -50,6 +51,7 @@ export function Badge({
     primary: 'bg-primary-500',
     secondary: 'bg-surface-500',
     accent: 'bg-accent-500',
+    pink: 'bg-pink-500',
     success: 'bg-green-500',
     warning: 'bg-amber-500',
     error: 'bg-red-500',
@@ -108,5 +110,5 @@ export const researchAreaColors: Record<string, BadgeVariant> = {
  * Get badge variant for a given tag
  */
 export function getTagVariant(tag: string): BadgeVariant {
-  return researchAreaColors[tag] || 'neutral';
+  return 'primary';
 }

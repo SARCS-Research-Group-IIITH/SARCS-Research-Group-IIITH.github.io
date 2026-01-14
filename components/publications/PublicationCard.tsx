@@ -24,18 +24,37 @@ interface PublicationCardProps {
  * - External links (PDF, arXiv, code, etc.)
  */
 export function PublicationCard({ publication }: PublicationCardProps) {
-  // Format author list (show first 3, then "et al.")
+  // Highlighted author name
+  const highlightedAuthor = "Priyesh Shukla";
+
+  // Format author list with highlighting for specific author
   const formatAuthors = (authors: string[]) => {
-    if (authors.length <= 3) {
-      return authors.join(', ');
-    }
-    return `${authors.slice(0, 3).join(', ')}, et al.`;
+    const displayAuthors = authors.length <= 3 ? authors : [...authors.slice(0, 3), 'et al.'];
+    
+    return displayAuthors.map((author, index) => {
+      const isHighlighted = author === highlightedAuthor;
+      const separator = index < displayAuthors.length - 1 ? ', ' : '';
+      
+      if (isHighlighted) {
+        return (
+          <span key={index}>
+            <span className="font-semibold text-amber-600 dark:text-amber-400">{author}</span>
+            {separator}
+          </span>
+        );
+      }
+      return (
+        <span key={index}>
+          {author}{separator}
+        </span>
+      );
+    });
   };
 
   // Publication type badge colors
-  const typeColors: Record<Publication['type'], 'primary' | 'accent' | 'success' | 'warning' | 'neutral'> = {
-    conference: 'primary',
-    journal: 'success',
+  const typeColors: Record<Publication['type'], 'primary' | 'accent' | 'pink' | 'success' | 'warning' | 'error' | 'neutral'> = {
+    conference: 'pink',
+    journal: 'pink',
     workshop: 'accent',
     preprint: 'warning',
     thesis: 'neutral',

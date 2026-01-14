@@ -1,9 +1,9 @@
 {
   "lab": {
-    "name": "SARCS Lab",
-    "fullName": "Sustainable, Advanced and Robust Computing Systems",
+    "fullname": "",
+    "name": "Sustainable, Advanced and Robust Computing Systems",
     "logo": "/images/logo.svg",
-    "mission": "The SARCS Laboratory is dedicated to advancing the frontiers of computer architecture, hardware-software co-design, and emerging computing paradigms. Our research spans in-memory computing, RISC-V architectures, hardware accelerators, and AI systems, with a focus on developing efficient, scalable, and sustainable computing solutions for next-generation applications.",
+    "mission": "The SARCS Lab is dedicated to advancing the frontiers of computer architecture, hardware-software co-design, and emerging computing paradigms like photonics, quantum computing and in-memory computing. Our research spans RISC-V architectures, hardware accelerators, compute-in-memory, and AI systems, with a focus on developing efficient, scalable, and sustainable computing solutions for next-generation applications.",
     "address": [
       "Room 318, Vindhya Building, Research Street,",
       "Center for VLSI and Embedded Systems Technologies,",

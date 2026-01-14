@@ -13,7 +13,8 @@ import type { Publication } from '@/types';
 // Import data
 import publicationsData from '@/data/publications.json';
 
-const publications = publicationsData as Publication[];
+// Sort publications by year (most recent first)
+const publications = (publicationsData as Publication[]).sort((a, b) => b.year - a.year);
 
 export const metadata: Metadata = {
   title: 'Publications',
@@ -33,12 +34,12 @@ export default function PublicationsPage() {
     <>
       <PageHeader
         title="Publications"
-        description="Our research publications in top venues including ISCA, MICRO, DAC, and leading journals. Use the search and filters to find specific papers."
+        description=""
+        compact
       />
-
-      <Section>
+      <div className="container-page py-6">
         <PublicationFilters publications={publications} />
-      </Section>
+      </div>
     </>
   );
 }
