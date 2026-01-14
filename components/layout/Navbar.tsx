@@ -26,8 +26,6 @@ const navItems: NavItem[] = [
       { label: 'In-Memory Computing', href: '/projects/in-memory-computing', indent: true },
       { label: 'RISC-V Architectures', href: '/projects/riscv-architectures', indent: true },
       { label: 'Hardware Accelerators', href: '/projects/hardware-accelerators', indent: true },
-      { label: 'Signal Processing', href: '/projects/signal-processing', indent: true },
-      { label: 'AI Systems', href: '/projects/ai-systems', indent: true },
     ],
   },
   { label: 'Publications', href: '/publications' },

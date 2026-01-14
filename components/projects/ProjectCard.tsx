@@ -104,25 +104,8 @@ export function ProjectCard({ project, variant = 'default' }: ProjectCardProps) 
           {project.shortDescription}
         </p>
 
-        {/* Footer links */}
-        <div className="flex items-center justify-between pt-4 border-t border-surface-100 dark:border-surface-700">
-          <div className="flex gap-2">
-            {project.links.github && (
-              <span className="rounded p-1.5 text-surface-400 hover:bg-surface-100 hover:text-surface-600 dark:hover:bg-surface-700 dark:hover:text-surface-300">
-                <Github className="h-4 w-4" />
-              </span>
-            )}
-            {project.links.paper && (
-              <span className="rounded p-1.5 text-surface-400 hover:bg-surface-100 hover:text-surface-600 dark:hover:bg-surface-700 dark:hover:text-surface-300">
-                <FileText className="h-4 w-4" />
-              </span>
-            )}
-            {project.links.website && (
-              <span className="rounded p-1.5 text-surface-400 hover:bg-surface-100 hover:text-surface-600 dark:hover:bg-surface-700 dark:hover:text-surface-300">
-                <ExternalLink className="h-4 w-4" />
-              </span>
-            )}
-          </div>
+        {/* Learn more link */}
+        <div className="flex items-center justify-end pt-4 border-t border-surface-100 dark:border-surface-700">
           <span className="inline-flex items-center gap-1 text-sm font-medium text-surface-600 dark:text-surface-400">
             Learn more
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
