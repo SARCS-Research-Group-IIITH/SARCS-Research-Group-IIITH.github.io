@@ -34,7 +34,7 @@ export function ProjectCard({ project, variant = 'default' }: ProjectCardProps) 
 
   if (variant === 'compact') {
     return (
-      <Link href={`/projects/${project.slug}`}>
+      <Link href={`/projects/${project.slug}`} className="no-underline hover:no-underline">
         <Card hover className="group h-full">
           <div className="flex items-start gap-4">
             {/* Image placeholder */}
@@ -71,7 +71,7 @@ export function ProjectCard({ project, variant = 'default' }: ProjectCardProps) 
   }
 
   return (
-    <Link href={`/projects/${project.slug}`}>
+    <Link href={`/projects/${project.slug}`} className="no-underline hover:no-underline">
       <Card hover className="group h-full">
         {/* Header with Image */}
         <div className="mb-4">
