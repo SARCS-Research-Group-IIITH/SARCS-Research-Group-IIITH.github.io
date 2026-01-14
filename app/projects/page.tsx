@@ -34,6 +34,7 @@ export default function ProjectsPage() {
       <PageHeader
         title="Research"
         description="Our lab focuses on advancing computer architecture and hardware-software co-design across multiple domains. Explore our research areas below."
+        className="bg-teal-50 dark:bg-teal-950/20"
       />
 
       <Section>

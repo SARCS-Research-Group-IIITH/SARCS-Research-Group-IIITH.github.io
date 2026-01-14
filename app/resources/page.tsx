@@ -34,6 +34,7 @@ export default function ResourcesPage() {
       <PageHeader
         title="Resources"
         description="Open-source tools, code repositories, datasets, and documentation from our research. Feel free to use and contribute!"
+        className="bg-blue-50 dark:bg-blue-950/20"
       />
 
       <Section>

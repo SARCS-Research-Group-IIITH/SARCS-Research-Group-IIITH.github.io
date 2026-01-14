@@ -34,6 +34,7 @@ export default function MediaPage() {
       <PageHeader
         title="Media Gallery"
         description="Explore photos from our lab events, conference presentations, team activities, and research highlights."
+        className="bg-purple-50 dark:bg-purple-950/20"
       />
 
       <Section>

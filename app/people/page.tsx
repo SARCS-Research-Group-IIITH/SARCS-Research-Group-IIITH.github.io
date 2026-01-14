@@ -43,6 +43,7 @@ export default function PeoplePage() {
       <PageHeader
         title="People"
         description="Meet the researchers and students who make up our lab community."
+        className="bg-green-50 dark:bg-green-950/20"
       />
 
       {/* Faculty Section */}

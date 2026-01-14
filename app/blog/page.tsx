@@ -33,6 +33,7 @@ export default function BlogPage() {
       <PageHeader
         title="Blogs"
         description="Tutorials, research insights, and updates from our lab."
+        className="bg-amber-50 dark:bg-amber-950/20"
       />
 
       {/* Blog Section - Center Aligned */}

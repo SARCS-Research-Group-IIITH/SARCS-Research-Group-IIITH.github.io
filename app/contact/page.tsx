@@ -60,7 +60,7 @@ export default function ContactPage() {
 
       {/* Openings Section */}
       <Section className="pt-0">
-        <div className="mx-auto max-w-4xl">
+        <div className="mx-auto max-w-6xl">
           <SectionHeader
             title="Join Our Team"
             align="center"

@@ -36,6 +36,7 @@ export default function PublicationsPage() {
         title="Publications"
         description=""
         compact
+        className="bg-indigo-50 dark:bg-indigo-950/20"
       />
       <div className="container-page py-6">
         <PublicationFilters publications={publications} />
