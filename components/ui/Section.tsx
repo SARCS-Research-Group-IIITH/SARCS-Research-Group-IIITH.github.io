@@ -75,9 +75,10 @@ interface PageHeaderProps {
   title: string;
   description?: string;
   className?: string;
+  children?: React.ReactNode;
 }
 
-export function PageHeader({ title, description, className = '' }: PageHeaderProps) {
+export function PageHeader({ title, description, className = '', children }: PageHeaderProps) {
   return (
     <div className={`bg-surface-100 dark:bg-surface-900 ${className}`}>
       <div className="container-page py-8 md:py-10">
@@ -89,6 +90,7 @@ export function PageHeader({ title, description, className = '' }: PageHeaderPro
             {description}
           </p>
         )}
+        {children}
       </div>
     </div>
   );

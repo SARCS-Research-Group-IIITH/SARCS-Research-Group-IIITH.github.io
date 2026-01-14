@@ -36,25 +36,15 @@ export default function ContactPage() {
       <PageHeader
         title="Contact Us"
         description="Get in touch with our lab or explore opportunities to join our research team."
-      />
-
-      {/* Contact Info Section */}
-      <Section>
-        <div className="mx-auto max-w-4xl">
-          <SectionHeader
-            title="Get in Touch"
-            subtitle="We'd love to hear from you."
-            align="center"
+      >
+        <div className="mx-auto mt-8 max-w-2xl">
+          <ContactInfo
+            address={labInfo.address}
+            email={labInfo.email}
+            phone={labInfo.phone}
           />
-          <div className="mx-auto max-w-2xl">
-            <ContactInfo
-              address={labInfo.address}
-              email={labInfo.email}
-              phone={labInfo.phone}
-            />
-          </div>
         </div>
-      </Section>
+      </PageHeader>
 
       {/* Openings Section */}
       <Section className="pt-0">
