@@ -28,7 +28,7 @@ interface HeroSectionProps {
  * - Call-to-action buttons
  * - Subtle gradient background
  */
-export function HeroSection({ labName, fullName, mission, logoSrc, backgroundImage = '/images/hero-bg.svg' }: HeroSectionProps) {
+export function HeroSection({ labName, fullName, mission, logoSrc, backgroundImage = '/images/bg_img.png' }: HeroSectionProps) {
   return (
     <section className="relative overflow-hidden min-h-[60vh] flex items-center">
       {/* Background image with overlay */}
@@ -43,10 +43,7 @@ export function HeroSection({ labName, fullName, mission, logoSrc, backgroundIma
         <div className="mx-auto max-w-4xl text-center">
           {/* Lab Logo */}
           <div className="mb-8 flex justify-center">
-            {/* PLACEHOLDER: Replace with actual lab logo */}
-            <div className="flex h-24 w-24 items-center justify-center rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 text-4xl font-bold text-white shadow-lg md:h-32 md:w-32 md:text-5xl">
-              S
-            </div>
+            <img src="/images/SARCS_Logo.png" alt="SARCS Logo" className="h-24 w-auto md:h-32" />
           </div>
 
           {/* Lab Name */}

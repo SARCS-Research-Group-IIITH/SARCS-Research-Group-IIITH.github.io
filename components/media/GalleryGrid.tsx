@@ -28,10 +28,9 @@ interface GalleryGridProps {
 export function GalleryGrid({ items }: GalleryGridProps) {
   const [categoryFilter, setCategoryFilter] = useState<string>('all');
 
-  // Get unique categories
+  // Get unique categories - only show All, Conference, Event
   const categories = useMemo(() => {
-    const unique = Array.from(new Set(items.map((item) => item.category)));
-    return ['all', ...unique];
+    return ['all', 'conference', 'event'];
   }, [items]);
 
   // Filter items by category
@@ -134,22 +133,14 @@ export function GalleryItem({ item, categoryColor, onClick }: GalleryItemProps) 
       onClick={onClick}
       className="group relative aspect-[4/3] overflow-hidden rounded-lg bg-surface-100 dark:bg-surface-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500"
     >
-      {/* PLACEHOLDER: Replace with actual gallery images */}
-      <div className="flex h-full w-full items-center justify-center text-surface-400">
-        <svg
-          className="h-16 w-16"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={1.5}
-            d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-          />
-        </svg>
-      </div>
+      {/* Gallery Image */}
+      <Image
+        src={item.src}
+        alt={item.alt}
+        fill
+        className="object-cover transition-transform group-hover:scale-105"
+        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+      />
 
       {/* Overlay with caption */}
       <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/70 to-transparent p-4 opacity-0 transition-opacity group-hover:opacity-100">

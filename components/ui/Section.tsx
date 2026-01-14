@@ -80,12 +80,12 @@ interface PageHeaderProps {
 export function PageHeader({ title, description, className = '' }: PageHeaderProps) {
   return (
     <div className={`bg-surface-100 dark:bg-surface-900 ${className}`}>
-      <div className="container-page py-12 md:py-16">
-        <h1 className="text-3xl font-bold text-surface-900 dark:text-surface-50 md:text-4xl lg:text-5xl">
+      <div className="container-page py-8 md:py-10">
+        <h1 className="text-2xl font-bold text-surface-900 dark:text-surface-50 md:text-3xl lg:text-4xl">
           {title}
         </h1>
         {description && (
-          <p className="mt-4 max-w-3xl text-lg text-surface-600 dark:text-surface-400">
+          <p className="mt-3 text-base text-surface-600 dark:text-surface-400">
             {description}
           </p>
         )}

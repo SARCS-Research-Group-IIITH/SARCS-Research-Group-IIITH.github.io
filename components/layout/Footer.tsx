@@ -69,11 +69,7 @@ export function Footer() {
               href="/"
               className="mb-3 flex items-center gap-2 text-lg font-semibold text-surface-900 hover:no-underline dark:text-surface-50"
             >
-              {/* PLACEHOLDER: Replace with actual lab logo */}
-              <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-primary-600 text-white text-sm">
-                S
-              </div>
-              {labInfo.name}
+              <img src="/images/SARCS_Logo.png" alt="SARCS Logo" className="h-7 w-auto" />
             </Link>
             <p className="mb-3 text-sm text-surface-600 dark:text-surface-400">
               {labInfo.fullName}
