@@ -5,7 +5,7 @@
     "title": "In-Memory Computing",
     "shortDescription": "Developing novel computing paradigms that perform computation directly within memory arrays to overcome the von Neumann bottleneck.",
     "fullDescription": "In-memory computing (IMC) represents a paradigm shift in computer architecture by performing computations directly within memory arrays, eliminating costly data movement between memory and processing units. Our research focuses on developing efficient IMC architectures for machine learning workloads, exploring both analog and digital implementations using emerging non-volatile memory technologies such as ReRAM, PCM, and MRAM.",
-    "image": "/images/projects/in-memory-computing.svg",
+    "image": "/images/research/in-memory-computing.png",
     "topics": [
       "Analog and digital in-memory computing architectures",
       "ReRAM and MRAM-based compute-in-memory designs",
@@ -20,7 +20,7 @@
       "documentation": "https://sarcs-lab.github.io/imc-docs"
     },
     "status": "active",
-    "startYear": 2022
+    "startYear": 2024
   },
   {
     "id": "proj-riscv",
