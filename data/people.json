@@ -58,7 +58,7 @@
       "role": "ms",
       "designation": "MS Student",
       "program": "MS",
-      "yearJoined": 2023,
+      "yearJoined": 2025,
       "researchInterests": ["Quantum Computing"],
       "links": {
         "email": "lokendra.kanawat@research.iiit.ac.in",
@@ -108,7 +108,7 @@
       "designation": "Undergraduate Researcher",
       "program": "ECE",
       "yearJoined": 2025,
-      "researchInterests": ["In-Memory Computing", "Hardware Accelerators", "Computer Architecture"],
+      "researchInterests": ["In-Memory Computing", "Computer Architecture"],
       "links": {
         "email": "siddarth.g@students.iiit.ac.in",
         "github": "https://github.com/iamsid44",

@@ -47,7 +47,7 @@ export default function PeoplePage() {
       />
 
       {/* Faculty Section */}
-      <Section>
+      <Section className="!pb-0">
         <div className="space-y-6">
           {faculty.map((person) => (
             <FacultyCard key={person.id} faculty={person} />
@@ -56,7 +56,7 @@ export default function PeoplePage() {
       </Section>
 
       {/* All Students - no sub-headers, role shown on individual cards */}
-      <Section className="bg-surface-50 dark:bg-surface-900/50">
+      <Section className="bg-surface-50 !pt dark:bg-surface-900/50">
         <StudentGrid students={allStudents} />
       </Section>
 
