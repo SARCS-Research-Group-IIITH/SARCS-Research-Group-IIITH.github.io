@@ -25,10 +25,10 @@ interface ContactInfoProps {
  */
 export function ContactInfo({ address, email, phone }: ContactInfoProps) {
   return (
-    <Card>
-      <h3 className="mb-4 text-lg font-semibold text-surface-900 dark:text-surface-50">
+    <Card className="overflow-hidden">
+      {/* <h3 className="mb-4 text-lg font-semibold text-surface-900 dark:text-surface-50">
         Contact Information
-      </h3>
+      </h3> */}
 
       <div className="space-y-4">
         {/* Address */}
