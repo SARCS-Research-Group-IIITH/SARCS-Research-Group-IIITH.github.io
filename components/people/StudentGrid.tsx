@@ -33,7 +33,7 @@ export function StudentGrid({ students, title }: StudentGridProps) {
           {title}
         </h3>
       )}
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="grid grid-cols-2 gap-6 lg:grid-cols-4">
         {students.map((student) => (
           <StudentCard key={student.id} student={student} />
         ))}
