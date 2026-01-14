@@ -3,21 +3,17 @@
     "id": "proj-imc",
     "slug": "in-memory-computing",
     "title": "In-Memory Computing",
-    "shortDescription": "Developing novel computing paradigms that perform computation directly within memory arrays to overcome the von Neumann bottleneck.",
-    "fullDescription": "In-memory computing (IMC) represents a paradigm shift in computer architecture by performing computations directly within memory arrays, eliminating costly data movement between memory and processing units. Our research focuses on developing efficient IMC architectures for machine learning workloads such as , exploring both analog and digital implementations using emerging non-volatile memory technologies such as ReRAM, PCM, and MRAM.",
+    "shortDescription": "Developing novel computing paradigms that perform computation directly within memory arrays to overcome the von Neumann bottleneck. The  following repository contains a collection of literatures on SRAM-based in-memory computing (CIM) architectures and techniques.",
+    "fullDescription": "In-memory computing (IMC) represents a paradigm shift in computer architecture by performing computations directly within memory arrays, eliminating costly data movement between memory and processing units. Our research focuses on developing efficient IMC architectures for machine learning inference workloads such as CNN, LLM, etc. Exploring both analog and digital implementations using CMOS-silicon DRAM/SRAM memories as well as emerging non-volatile memory technologies such as ReRAM, PCM, and MRAM.",
     "image": "/images/research/in-memory-computing.png",
     "topics": [
-      "Analog and digital in-memory computing architectures",
-      "ReRAM and MRAM-based compute-in-memory designs",
-      "Neural network accelerators using IMC",
-      "Energy-efficient inference engines",
-      "Reliability and variation tolerance in IMC systems",
-      "Hardware-software co-design for IMC"
+      "Digital SRAM In-Memory Computing",
+      "Programmable Mixed-Signal SRAM In-Memory Computing",
+      "ADC/DAC-free In-Memory Computing",
+      "ReRAM-based In-Memory Computing"
     ],
     "links": {
-      "github": "https://github.com/SARCS-Research-Group-IIITH/imc-accelerator",
-      "paper": "https://arxiv.org/abs/xxxx.xxxxx",
-      "documentation": "https://sarcs-lab.github.io/imc-docs"
+      "github": "https://github.com/BUAA-CI-LAB/Literatures-on-SRAM-based-CIM"
     },
     "status": "active",
     "startYear": 2024
