@@ -7,36 +7,20 @@
           "name": "Spring",
           "courses": [
             {
-              "code": "EC5.102",
-              "name": "Computer Organization",
+              "code": "EC2.204",
+              "name": "Intro to Processor Architecture",
               "faculty": ["Priyesh Shukla"],
               "link": null
             }
           ]
         },
-        {
-          "name": "Monsoon",
-          "courses": [
-            {
-              "code": "EC5.101",
-              "name": "Digital Systems and Microcontrollers",
-              "faculty": ["Priyesh Shukla", "Aftab Hussain"],
-              "link": null
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "year": "2024-2025",
-      "semesters": [
         {
           "name": "Spring",
           "courses": [
             {
-              "code": "EC5.102",
-              "name": "Computer Organization",
-              "faculty": ["Priyesh Shukla"],
+              "code": "EC2.204",
+              "name": "Electronic Workshop - II",
+              "faculty": ["Priyesh Shukla", "Arti Yardi"],
               "link": null
             }
           ]
@@ -45,9 +29,31 @@
           "name": "Monsoon",
           "courses": [
             {
-              "code": "EC5.101",
-              "name": "Digital Systems and Microcontrollers",
-              "faculty": ["Priyesh Shukla", "Aftab Hussain"],
+              "code": "OC3.101",
+              "name": "Value Education",
+              "faculty": ["Priyesh Shukla", "and others"],
+              "link": null
+            }
+          ]
+        },
+        {
+          "name": "Monsoon",
+          "courses": [
+            {
+              "code": "EC3.202",
+              "name": "Embedded Systems Workshop",
+              "faculty": ["Priyesh Shukla", "and others"],
+              "link": null
+            }
+          ]
+        },
+        {
+          "name": "Monsoon",
+          "courses": [
+            {
+              "code": "CS2.502",
+              "name": "Hardware for AI",
+              "faculty": ["Priyesh Shukla", "Suresh Purini", "Girish Varma"],
               "link": null
             }
           ]

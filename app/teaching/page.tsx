@@ -30,7 +30,7 @@ export default function TeachingPage() {
     <>
       <PageHeader
         title="Teaching"
-        description="Our faculty are committed to educating the next generation of computer architects and systems researchers. Explore the courses we offer across different semesters."
+        description=""
         className="bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 dark:from-indigo-950/30 dark:via-purple-950/20 dark:to-pink-950/20"
       />
 
