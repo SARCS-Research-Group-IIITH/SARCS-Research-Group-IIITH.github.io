@@ -43,7 +43,7 @@ export function HeroSection({ labName, fullName, mission, logoSrc, backgroundIma
         <div className="mx-auto max-w-4xl text-center">
           {/* Lab Logo */}
           <div className="mb-8 flex justify-center">
-            <img src="/images/SARCS_Logo.png" alt="SARCS Logo" className="h-24 w-auto md:h-32" />
+            <Image src="/images/SARCS_Logo.png" alt="SARCS Logo" width={128} height={128} className="h-24 w-auto md:h-32" priority />
           </div>
 
           {/* Lab Name */}

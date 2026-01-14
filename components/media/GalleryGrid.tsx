@@ -31,7 +31,7 @@ export function GalleryGrid({ items }: GalleryGridProps) {
   // Get unique categories - only show All, Conference, Event
   const categories = useMemo(() => {
     return ['all', 'conference', 'event'];
-  }, [items]);
+  }, []);
 
   // Filter items by category
   const filteredItems = useMemo(() => {

@@ -9,6 +9,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { ThemeToggle } from './ThemeToggle';
@@ -101,7 +102,7 @@ export function Navbar() {
             href="/"
             className="flex items-center gap-2 text-lg font-semibold text-surface-900 hover:no-underline dark:text-surface-50"
           >
-            <img src="/images/SARCS_Logo.png" alt="SARCS Logo" className="h-12 w-auto" />
+            <Image src="/images/SARCS_Logo.png" alt="SARCS Logo" width={48} height={48} className="h-12 w-auto" priority />
           </Link>
 
           {/* Desktop Navigation */}
