@@ -60,11 +60,11 @@ export default function PeoplePage() {
       </Section>
 
       {/* Alumni */}
-      {alumni.length > 0 && (
+      {/* {alumni.length > 0 && (
         <Section>
           <AlumniList alumni={alumni} />
         </Section>
-      )}
+      )} */}
     </>
   );
 }

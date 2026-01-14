@@ -33,28 +33,30 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      <PageHeader
-        title="Contact Us"
-        description="Get in touch with our lab or explore opportunities to join our research team."
-      />
-
-      {/* Contact Info Section */}
-      <Section>
-        <div className="mx-auto max-w-4xl">
-          <SectionHeader
-            title="Get in Touch"
-            subtitle="We'd love to hear from you."
-            align="center"
-          />
-          <div className="mx-auto max-w-2xl">
-            <ContactInfo
-              address={labInfo.address}
-              email={labInfo.email}
-              phone={labInfo.phone}
-            />
+      <div className="bg-surface-100 dark:bg-surface-900">
+        <div className="container-page py-12 md:py-16">
+          <div className="grid gap-8 md:grid-cols-2 lg:gap-12">
+            {/* Left: Title and Description */}
+            <div>
+              <h1 className="mb-4 text-3xl font-bold text-surface-900 dark:text-surface-50 md:text-4xl lg:text-5xl">
+                Contact Us
+              </h1>
+              <p className="text-lg text-surface-600 dark:text-surface-400">
+                Get in touch with our lab or explore opportunities to join our research team.
+              </p>
+            </div>
+            
+            {/* Right: Contact Information */}
+            <div className="flex items-start md:justify-end">
+              <ContactInfo
+                address={labInfo.address}
+                email={labInfo.email}
+                phone={labInfo.phone}
+              />
+            </div>
           </div>
         </div>
-      </Section>
+      </div>
 
       {/* Openings Section */}
       <Section className="pt-0">

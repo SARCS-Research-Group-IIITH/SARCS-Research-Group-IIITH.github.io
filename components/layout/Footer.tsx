@@ -15,10 +15,8 @@ const labInfo = {
   name: 'SARCS Lab',
   fullName: 'Sustainable, Advanced and Robust Computing Systems',
   address: [
-    'Room 318, Vindhya Building, Research Street,',
-    'Center for VLSI and Embedded Systems Technologies,',
-    'International Institute of Information Technology Hyderabad,',
-    'Telangana 500032',
+    'A5-318, Vindhya Building,',
+    'IIIT Hyderabad, Telangana 500032',
   ],
   email: 'priyesh.shukla@iiit.ac.in',
   socialLinks: {

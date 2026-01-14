@@ -76,9 +76,10 @@ interface PageHeaderProps {
   description?: string;
   className?: string;
   compact?: boolean;
+  children?: React.ReactNode;
 }
 
-export function PageHeader({ title, description, className = '', compact = false }: PageHeaderProps) {
+export function PageHeader({ title, description, className = '', compact = false, children }: PageHeaderProps) {
   return (
     <div className={`bg-surface-100 dark:bg-surface-900 ${className}`}>
       <div className={`container-page ${compact ? 'py-4 md:py-6' : 'py-8 md:py-10'}`}>
@@ -90,6 +91,7 @@ export function PageHeader({ title, description, className = '', compact = false
             {description}
           </p>
         )}
+        {children}
       </div>
     </div>
   );
