@@ -53,7 +53,7 @@ export interface Person {
   researchInterests?: string[];
   links: PersonLinks;
   // For alumni
-  graduationYear?: number;
+  graduationYear?: number | string;
   currentAffiliation?: string;
   // For students
   program?: 'PhD' | 'MS' | 'MTech' | 'BTech' | 'Undergraduate' | 'Research Intern';
@@ -152,6 +152,7 @@ export interface BlogPost {
   link: string; // External link to full post
   author?: string;
   tags?: string[];
+  image?: string;
 }
 
 // ============================================================================

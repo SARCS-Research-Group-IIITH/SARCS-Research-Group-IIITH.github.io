@@ -51,7 +51,6 @@ export default function ContactPage() {
               <ContactInfo
                 address={labInfo.address}
                 email={labInfo.email}
-                phone={labInfo.phone}
               />
             </div>
           </div>

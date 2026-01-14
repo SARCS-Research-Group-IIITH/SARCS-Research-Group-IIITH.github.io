@@ -38,7 +38,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <HeroSection
         labName={labInfo.name}
-        fullName={labInfo.fullName}
+        fullName={labInfo.fullname}
         mission={labInfo.mission}
         logoSrc={labInfo.logo}
         // PLACEHOLDER: Add your own hero background image
