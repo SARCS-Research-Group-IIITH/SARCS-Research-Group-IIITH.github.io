@@ -23,22 +23,18 @@
     "slug": "riscv-architectures",
     "title": "RISC-V Architectures",
     "shortDescription": "Designing and implementing custom RISC-V processors and extensions for specialized computing applications.",
-    "fullDescription": "RISC-V is an open-source instruction set architecture that enables innovation in processor design. Our lab develops custom RISC-V cores with specialized extensions for various application domains, including edge AI, cryptography, and signal processing. We also contribute to the RISC-V ecosystem through tools, simulators, and educational resources.",
-    "image": "/images/projects/riscv.svg",
+    "fullDescription": "RISC-V is an open-source instruction set architecture that enables innovation in processor design. Our lab develops custom RISC-V cores with specialized extensions for various application domains, including edge AI. We also contribute to the RISC-V ecosystem through tools, simulators, and educational resources. We also explore superscalar and out-of-order execution models along with vector and matrix processors to enhance performance.",
+    "image": "/images/research/Riscv-architectures.png",
     "topics": [
       "Custom RISC-V core implementations",
       "Vector and matrix extension development",
-      "Security extensions for trusted computing",
-      "Low-power RISC-V designs for IoT",
-      "RISC-V simulation and verification tools",
       "Open-source processor development"
     ],
     "links": {
-      "github": "https://github.com/SARCS-Research-Group-IIITH/riscv-core",
-      "documentation": "https://sarcs-lab.github.io/riscv-docs"
+      "github": "https://github.com/riscv"
     },
     "status": "active",
-    "startYear": 2020
+    "startYear": 2025
   },
   {
     "id": "proj-accelerators",
