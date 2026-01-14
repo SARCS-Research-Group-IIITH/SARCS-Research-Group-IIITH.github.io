@@ -98,10 +98,10 @@ export function EmailButton({
 
       {/* Tooltip */}
       {showTooltip && !copied && (
-        <div className="absolute bottom-full left-1/2 z-50 mb-2 -translate-x-1/2 whitespace-nowrap rounded-lg bg-surface-900 px-3 py-1.5 text-xs text-white shadow-lg dark:bg-surface-700">
+        <div className="pointer-events-none absolute bottom-full left-1/2 z-50 mb-2 -translate-x-1/2 whitespace-nowrap rounded-lg bg-surface-900 px-3 py-1.5 text-xs text-white shadow-lg dark:bg-surface-700">
           <div className="flex items-center gap-2">
-            <span>{email}</span>
-            <Copy className="h-3 w-3 opacity-60" />
+            <span className="max-w-full overflow-visible">{email}</span>
+            <Copy className="h-3 w-3 flex-shrink-0 opacity-60" />
           </div>
           {/* Arrow */}
           <div className="absolute left-1/2 top-full -translate-x-1/2 border-4 border-transparent border-t-surface-900 dark:border-t-surface-700" />

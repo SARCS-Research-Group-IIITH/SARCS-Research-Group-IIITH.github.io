@@ -25,10 +25,10 @@ interface ContactInfoProps {
  */
 export function ContactInfo({ address, email, phone }: ContactInfoProps) {
   return (
-    <Card className="overflow-hidden">
-      {/* <h3 className="mb-4 text-lg font-semibold text-surface-900 dark:text-surface-50">
+    <Card className="overflow-visible">
+      <h3 className="mb-4 text-lg font-semibold text-surface-900 dark:text-surface-50">
         Contact Information
-      </h3> */}
+      </h3>
 
       <div className="space-y-4">
         {/* Address */}
@@ -46,7 +46,13 @@ export function ContactInfo({ address, email, phone }: ContactInfoProps) {
 
         {/* Email */}
         <div className="flex items-center gap-3">
-          <EmailButton email={email} size="md" showLabel />
+          <EmailButton email={email} size="md" />
+          <a
+            href={`mailto:${email}`}
+            className="text-sm text-surface-600 transition-colors hover:text-primary-600 dark:text-surface-400 dark:hover:text-primary-400"
+          >
+            {email}
+          </a>
         </div>
 
         {/* Phone */}

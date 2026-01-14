@@ -63,7 +63,6 @@ export default function ContactPage() {
         <div className="mx-auto max-w-4xl">
           <SectionHeader
             title="Join Our Team"
-            subtitle="Current openings and opportunities."
             align="center"
           />
           <OpeningsSection openings={openings} />
