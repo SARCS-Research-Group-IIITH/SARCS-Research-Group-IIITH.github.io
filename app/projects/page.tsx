@@ -37,7 +37,7 @@ export default function ProjectsPage() {
         className="bg-teal-50 dark:bg-teal-950/20"
       />
 
-      <Section>
+      <Section className="!pt-8 md:!pt-10 !pb-4 md:!pb-6">
         {/* Mobile-friendly tabs */}
         <div className="mb-8 lg:hidden">
           <ResearchAreaTabs projects={projects} />
@@ -45,16 +45,6 @@ export default function ProjectsPage() {
 
         {/* Project Grid */}
         <ProjectGrid projects={projects} />
-      </Section>
-
-      {/* Inspirational Quote */}
-      <Section className="py-8 md:py-12">
-        <Quote
-          text="The science of today is the technology of tomorrow."
-          author="Edward Teller"
-          title="Theoretical Physicist"
-          variant="centered"
-        />
       </Section>
     </>
   );

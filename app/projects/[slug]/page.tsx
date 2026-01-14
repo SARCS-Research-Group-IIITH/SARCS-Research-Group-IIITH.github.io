@@ -58,7 +58,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
   }
 
   return (
-    <Section>
+    <Section className="!pb-8 md:!pb-10">
       <div className="flex gap-8">
         {/* Sidebar Navigation - Desktop only */}
         <aside className="hidden w-64 flex-shrink-0 lg:block">

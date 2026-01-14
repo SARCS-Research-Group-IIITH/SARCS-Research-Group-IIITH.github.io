@@ -104,24 +104,6 @@ export function ProjectCard({ project, variant = 'default' }: ProjectCardProps) 
           {project.shortDescription}
         </p>
 
-        {/* Topics preview */}
-        {project.topics.length > 0 && (
-          <div className="mb-4">
-            <BadgeGroup>
-              {project.topics.slice(0, 3).map((topic) => (
-                <Badge key={topic} variant="neutral" size="sm">
-                  {topic.length > 25 ? topic.slice(0, 25) + '...' : topic}
-                </Badge>
-              ))}
-              {project.topics.length > 3 && (
-                <Badge variant="neutral" size="sm">
-                  +{project.topics.length - 3} more
-                </Badge>
-              )}
-            </BadgeGroup>
-          </div>
-        )}
-
         {/* Footer links */}
         <div className="flex items-center justify-between pt-4 border-t border-surface-100 dark:border-surface-700">
           <div className="flex gap-2">
