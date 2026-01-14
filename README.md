@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="public/images/SARCS_Logo.png" alt="SARCS Logo" width="200">
+</p>
+
 # SARCS Research Group Website
 
 Official website for the Sustainable, Advanced and Robust Computing Systems (SARCS) Research Group at IIIT Hyderabad.
