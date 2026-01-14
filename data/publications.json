@@ -1,147 +1,67 @@
 [
   {
     "id": "pub-1",
-    "title": "Energy-Efficient In-Memory Computing Architectures for Deep Learning Inference",
-    "authors": ["John Smith", "Alice Johnson", "Bob Williams", "Carol Davis"],
-    "venue": "International Symposium on Computer Architecture (ISCA)",
-    "year": 2026,
-    "abstract": "This paper presents a novel in-memory computing architecture that achieves 10x energy efficiency improvement for deep learning inference workloads. We propose a hybrid analog-digital computing scheme that leverages ReRAM crossbar arrays while maintaining high accuracy through adaptive precision control. Our architecture demonstrates state-of-the-art results on ImageNet classification with only 2% accuracy degradation compared to full-precision baselines.",
-    "tags": ["In-Memory Computing", "Deep Learning", "Energy Efficiency", "ReRAM"],
+    "title": "MOSAIC: Collaborative Compute-in-Memory µArrays for Flexible and Scalable Deep Learning",
+    "authors": ["Amit Ranjan Trivedi", "Shamma Nasrin", "Priyesh Shukla", "et al."],
+    "venue": "IEEE 43rd VLSI Test Symposium (VTS), Tempe, AZ, USA",
+    "year": 2025,
+    "abstract": "Compute-in-Memory (CiM) architectures, particularly those leveraging SRAM-based arrays, present significant opportunities for accelerating deep learning by mitigating data movement bottlenecks in traditional von Neumann systems. SRAM-based CiM offers notable advantages, including speed, seamless CMOS integration, and compatibility with existing System-on-Chip (SoC) designs. However, challenges persist, primarily stemming from analog-domain computations that necessitate analog-to-digital (A/D) and digital-to-analog (D/A) conversions, leading to reduced accuracy, increased power overhead, and rigid operational constraints. To overcome these limitations, we propose MOSAIC, a novel CiM architecture designed around three foundational principles: (1) co-designing deep learning operators for CiM such as employing multiplication-free computations and frequency-domain processing to minimize /eliminate DAC/ADC overheads; (2)leveraging a memory-immersed digitization approach that utilizes parasitic bit-lines as capacitive DACs within CiM arrays, thereby significantly reducing peripheral complexity and enhancing scalability; and (3) orchestrating inference over a network of compact CiM μArrays by dynamically interconnecting them to provide flexibility, efficiency, and minimized computational overhead for varied inference workload characteristics. Collectively with these fundamental innovations, MOSAIC addresses critical bottlenecks in accuracy, scalability, and flexibility, unlocking CiM's full potential for efficient deep learning in embedded systems.",
+    "tags": ["In-Memory Computing", "Deep Neural Networks", "Edge Computing"],
     "links": {
-      "pdf": "/papers/isca-2026-imc.pdf",
-      "arxiv": "https://arxiv.org/abs/xxxx.xxxxx",
-      "code": "https://github.com/SARCS-Research-Group-IIITH/imc-accelerator",
-      "doi": "https://doi.org/10.1145/xxxxxx"
+      "doi": "https://ieeexplore.ieee.org/abstract/document/11022889"
     },
-    "type": "conference"
+    "type": "Conference"
   },
   {
     "id": "pub-2",
-    "title": "SecureRISC: A RISC-V Processor with Hardware Security Extensions for Trusted Execution",
-    "authors": ["Bob Williams", "John Smith", "Eve Martinez"],
-    "venue": "IEEE/ACM International Symposium on Microarchitecture (MICRO)",
-    "year": 2025,
-    "abstract": "We present SecureRISC, a RISC-V processor implementation featuring comprehensive hardware security extensions for trusted execution environments. Our design includes memory encryption, secure boot mechanisms, and side-channel resistant execution modes. We demonstrate the effectiveness of our approach against various attack vectors while maintaining less than 15% performance overhead.",
-    "tags": ["RISC-V", "Hardware Security", "Trusted Execution", "Side-Channel Attacks"],
-    "links": {
-      "pdf": "/papers/micro-2025-securerisc.pdf",
-      "arxiv": "https://arxiv.org/abs/xxxx.xxxxx",
-      "code": "https://github.com/SARCS-Research-Group-IIITH/securerisc"
-    },
-    "type": "conference"
-  },
-  {
-    "id": "pub-3",
-    "title": "Sparse Matrix Accelerator Design for Scientific Computing Applications",
-    "authors": ["Alice Johnson", "David Lee", "John Smith"],
-    "venue": "Design, Automation and Test in Europe (DATE)",
-    "year": 2025,
-    "abstract": "Scientific computing applications frequently involve large sparse matrices. This paper presents a flexible accelerator architecture optimized for sparse matrix operations including SpMV, SpMM, and sparse solvers. Our design achieves 5x speedup over GPU implementations while consuming 8x less energy through novel dataflow optimizations and compressed data formats.",
-    "tags": ["Hardware Accelerators", "Sparse Computing", "Scientific Computing"],
-    "links": {
-      "pdf": "/papers/date-2025-sparse.pdf",
-      "slides": "/slides/date-2025-presentation.pdf"
-    },
-    "type": "conference"
-  },
-  {
-    "id": "pub-4",
-    "title": "Neural Architecture Search for Hardware-Efficient Edge AI",
-    "authors": ["Carol Davis", "John Smith", "Frank Chen"],
-    "venue": "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)",
-    "year": 2025,
-    "abstract": "Deploying neural networks on edge devices requires careful consideration of hardware constraints. We propose a hardware-aware neural architecture search framework that directly optimizes for latency, energy, and memory usage on target edge platforms. Our approach discovers architectures that achieve Pareto-optimal trade-offs between accuracy and hardware efficiency.",
-    "tags": ["AI Systems", "Neural Architecture Search", "Edge Computing", "Model Optimization"],
-    "links": {
-      "pdf": "/papers/tcad-2025-nas.pdf",
-      "code": "https://github.com/SARCS-Research-Group-IIITH/hw-nas",
-      "doi": "https://doi.org/10.1109/xxxxxx"
-    },
-    "type": "journal"
-  },
-  {
-    "id": "pub-5",
-    "title": "Low-Power RISC-V Vector Processor for IoT Edge Inference",
-    "authors": ["Eve Martinez", "Bob Williams", "John Smith"],
-    "venue": "IEEE International Solid-State Circuits Conference (ISSCC)",
+    "title": "Navigating the unknown: Uncertainty-aware compute-in-memory autonomy of edge robotics",
+    "authors": ["Nastaran Darabi", "Priyesh Shukla", "et al."],
+    "venue": "Design, Automation & Test in Europe Conference & Exhibition (DATE), Valencia, Spain",
     "year": 2024,
-    "abstract": "This paper presents a low-power RISC-V processor with custom vector extensions optimized for neural network inference on IoT devices. Fabricated in 22nm FD-SOI technology, our processor achieves 10 TOPS/W efficiency while supporting flexible precision from INT2 to FP16. The chip operates from 0.5V to 1.0V enabling dynamic voltage-frequency scaling.",
-    "tags": ["RISC-V", "IoT", "Low Power", "Vector Processing"],
+    "abstract": "This paper addresses the challenging problem of energy-efficient and uncertainty-aware pose estimation in insect- scale drones, which is crucial for tasks such as surveillance in constricted spaces and for enabling non-intrusive spatial intel- ligence in smart homes. Since tiny drones operate in highly dynamic environments, where factors like lighting and human movement impact their predictive accuracy, it is crucial to deploy uncertainty-aware prediction algorithms that can account for en- vironmental variations and express not only the prediction but also confidence in the prediction. We address both of these challenges with Compute-in-Memory (CIM) which has become a pivotal tech- nology for deep learning acceleration at the edge. While traditional CIM techniques are promising for energy-efficient deep learning, to bring in the robustness of uncertainty-aware predictions at the edge, we introduce a suite of novel techniques: First, we discuss CIM-based acceleration of Bayesian filtering methods uniquely by leveraging the Gaussian-like switching current of CMOS inverters along with co-design of kernel functions to operate with extreme parallelism and with extreme energy efficiency. Secondly, we discuss the CIM-based acceleration of variational inference of deep learning models through probabilistic processing while unfolding iterative computations of the method with a compute reuse strategy to significantly minimize the workload. Overall, our co-design methodologies demonstrate the potential of CIM to improve the processing efficiency of uncertainty-aware algorithms by orders of magnitude, thereby enabling edge robotics to access the robustness of sophisticated prediction frameworks within their extremely stringent area/power resources.",
+    "tags": ["In-Memory Computing", "Autonomous Navigation", "Edge robotics"],
     "links": {
-      "pdf": "/papers/isscc-2024-riscv-vector.pdf",
-      "doi": "https://doi.org/10.1109/xxxxxx"
+      "doi": "https://ieeexplore.ieee.org/abstract/document/10546628/"
     },
-    "type": "conference"
+    "type": "Conference"
   },
   {
-    "id": "pub-6",
-    "title": "ReRAM-Based Computing-in-Memory Architecture with Adaptive Precision",
-    "authors": ["Alice Johnson", "John Smith"],
-    "venue": "ACM/IEEE Design Automation Conference (DAC)",
-    "year": 2024,
-    "abstract": "We present an adaptive precision computing-in-memory architecture based on ReRAM technology. Our design dynamically adjusts computational precision based on layer sensitivity analysis, achieving optimal energy-accuracy trade-offs. Evaluated on various CNN models, we demonstrate 3x energy reduction with minimal accuracy loss.",
-    "tags": ["In-Memory Computing", "ReRAM", "Adaptive Precision", "CNN"],
-    "links": {
-      "pdf": "/papers/dac-2024-reram.pdf",
-      "arxiv": "https://arxiv.org/abs/xxxx.xxxxx"
-    },
-    "type": "conference"
+  "id": "pub-3",
+  "title": "MC-CIM: Compute-in-memory with monte-carlo dropouts for bayesian edge intelligence",
+  "authors": ["Priyesh Shukla", "Shamma Nasrin", "et al."],
+  "venue": "IEEE Transactions on Circuits and Systems I: Regular Papers (TCAS I)",
+  "year": 2022,
+  "abstract": "We propose MC-CIM, a compute-in-memory (CIM) framework for robust, yet low power, Bayesian edge intelli- gence. Deep neural networks (DNN) with deterministic weights cannot express their prediction uncertainties, thereby pose crit- ical risks for applications where the consequences of mispre- dictions are fatal such as surgical robotics. To address this limitation, Bayesian inference of a DNN has gained attention. Using Bayesian inference, not only the prediction itself, but the prediction confidence can also be extracted for planning risk-aware actions. However, Bayesian inference of a DNN is computationally expensive, ill-suited for real-time and/or edge deployment. An approximation to Bayesian DNN using Monte Carlo Dropout (MC-Dropout) has shown high robustness along with low computational complexity. Enhancing the computational efficiency of the method, we discuss a novel CIM module that can perform in-memory probabilistic dropout in addi- tion to in-memory weight-input scalar product to support the method. We also propose a compute-reuse reformulation of MC-Dropout where each successive instance can utilize the product-sum computations from the previous iteration. Even more, we discuss how the random instances can be optimally ordered to minimize the overall MC-Dropout workload by exploiting combinatorial optimization methods. Application of the proposed CIM-based MC-Dropout execution is discussed for MNIST character recognition and visual odometry (VO) of autonomous drones. The framework reliably gives prediction confidence amidst non-idealities imposed by MC-CIM to a good extent. Proposed MC-CIM with 16 × 31 SRAM array, 0.85 V supply, 16nm low-standby power (LSTP) technology consumes 32 pJ for 30 MC-Dropout instances of probabilistic inference in its most optimal computing and peripheral configuration, saving ∼34% energy compared to typical execution.",
+  "tags": ["In-Memory Computing", "Bayesian Inference", "Monte-Carlo Dropout"],
+  "links": {
+    "doi": "https://ieeexplore.ieee.org/abstract/document/9972346"
+  },
+  "type": "Journal"
   },
   {
-    "id": "pub-7",
-    "title": "High-Throughput FFT Architecture for 5G Signal Processing",
-    "authors": ["David Lee", "John Smith", "Grace Wang"],
-    "venue": "IEEE Journal of Solid-State Circuits (JSSC)",
-    "year": 2024,
-    "abstract": "Fifth-generation wireless systems require high-throughput FFT processing with stringent latency requirements. We present an area-efficient pipelined FFT architecture supporting variable-length transforms from 64 to 4096 points. Our design achieves 10 Gsamples/s throughput with sub-microsecond latency, meeting 5G NR specifications.",
-    "tags": ["Signal Processing", "5G", "FFT", "Wireless"],
-    "links": {
-      "pdf": "/papers/jssc-2024-fft.pdf",
-      "doi": "https://doi.org/10.1109/xxxxxx"
-    },
-    "type": "journal"
+  "id": "pub-4",
+  "title": "Ultralow-power localization of insect-scale drones: Interplay of probabilistic filtering and compute-in-memory",
+  "authors": ["Priyesh Shukla", "Ankith Muralidhar", "et al."],
+  "venue": "IEEE transactions on very large scale integration (VLSI) systems",
+  "year": 2021,
+  "abstract": "We propose a novel compute-in-memory (CIM)-based ultralow-power framework for probabilistic localization of insect-scale drones. Localization is a critical subroutine for path planning and rotor control in drones, where a drone is required to continuously estimate its pose (position and orientation) in flying space. The conventional probabilistic localization approaches rely on the 3-D Gaussian mixture model (GMM)-based representation of a 3-D map. A GMM model with hundreds of mixture functions is typically needed to adequately learn and represent the intricacies of the map. Meanwhile, localization using complex GMM map models is computationally intensive. Since insect-scale drones operate under extremely limited area/power budget, continuous localization using GMM models entails much higher operating energy, thereby limiting flying duration and/or size of the drone due to a larger battery. Addressing the computational challenges of localization in an insect-scale drone using a CIM approach, we propose a novel framework of 3-D map representation using a harmonic mean of the “Gaussian-like” mixture (HMGM) model. We show that short-circuit current of a multiinput floating-gate CMOS-based inverter follows the harmonic mean of a Gaussian-like function. Therefore, the likelihood function useful for drone localization can be efficiently implemented by connecting many multiinput inverters in parallel, each programmed with the parameters of the 3-D map model represented as HMGM. When the depth measurements are projected to the input of the implementation, the summed current of the inverters emulates the likelihood of the measurement. We have characterized our approach on an RGB-D scenes dataset. The proposed localization framework is ~25x energy-efficient than the traditional, 8-bit digital GMM-based processor paving the way for tiny autonomous drones.",
+  "tags": ["In-Memory Computing", "Insect-scale Drones", "Probabilistic localization"],
+  "links": {
+    "doi": "https://ieeexplore.ieee.org/abstract/document/9508123"
+  },
+  "type": "Journal"
   },
   {
-    "id": "pub-8",
-    "title": "Post-Quantum Cryptography Accelerator on FPGA",
-    "authors": ["Eve Martinez", "Alice Johnson", "John Smith"],
-    "venue": "IACR Transactions on Cryptographic Hardware and Embedded Systems (TCHES)",
-    "year": 2024,
-    "abstract": "With the advent of quantum computing, transitioning to post-quantum cryptographic algorithms is essential. This paper presents an FPGA-based accelerator for lattice-based cryptography schemes including Kyber and Dilithium. Our design achieves significant speedup over software implementations while maintaining constant-time execution for side-channel resistance.",
-    "tags": ["Hardware Accelerators", "Post-Quantum Cryptography", "FPGA", "Lattice Cryptography"],
-    "links": {
-      "pdf": "/papers/tches-2024-pqc.pdf",
-      "code": "https://github.com/SARCS-Research-Group-IIITH/pqc-accelerator"
-    },
-    "type": "journal"
+  "id": "pub-5",
+  "title": "MC2RAM: Markov Chain Monte Carlo Sampling in SRAM for Fast Bayesian Inference",
+  "authors": ["Priyesh Shukla", "Ahish Shylendra", "et al."],
+  "venue": "IEEE International Symposium on Circuits and Systems (ISCAS), Seville, Spain",
+  "year": 2020,
+  "abstract": "This work discusses the implementation of Markov Chain Monte Carlo (MCMC) sampling from an arbitrary Gaus- sian mixture model (GMM) within SRAM. We show a novel architecture of SRAM by embedding it with random number generators (RNGs), digital-to-analog converters (DACs), and analog-to-digital converters (ADCs) so that SRAM arrays can be used for high performance Metropolis-Hastings (MH) algorithm- based MCMC sampling. Most of the expensive computations are performed within the SRAM and can be parallelized for high speed sampling. Our iterative compute flow minimizes data movement during sampling. We characterize power-performance trade-off of our design by simulating on 45 nm CMOS technology. For a two-dimensional, two mixture GMM, the implementation consumes ⇠ 91μW power per sampling iteration and produces 500 samples in 2000 clock cycles on an average at 1 GHz clock frequency. Our study highlights interesting insights on how low- level hardware non-idealities can affect high-level sampling char- acteristics, and recommends ways to optimally operate SRAM within area/power constraints for high performance sampling.",
+  "tags": ["In-Memory Computing", "Markov chain Monte Carlo (MCMC) sampling"],
+  "links": {
+    "doi": "https://ieeexplore.ieee.org/abstract/document/9180701/"
   },
-  {
-    "id": "pub-9",
-    "title": "Efficient Transformer Inference on Edge Devices",
-    "authors": ["Carol Davis", "Frank Chen", "John Smith"],
-    "venue": "Conference on Neural Information Processing Systems (NeurIPS)",
-    "year": 2023,
-    "abstract": "Transformer models have achieved remarkable success but are computationally expensive for edge deployment. We propose a co-designed approach combining structured pruning, quantization-aware training, and attention pattern optimization specifically for edge hardware. Our method enables BERT inference on microcontrollers with 50x compression and only 2% accuracy drop.",
-    "tags": ["AI Systems", "Transformers", "Edge Computing", "Model Compression"],
-    "links": {
-      "pdf": "/papers/neurips-2023-transformers.pdf",
-      "arxiv": "https://arxiv.org/abs/xxxx.xxxxx",
-      "code": "https://github.com/SARCS-Research-Group-IIITH/edge-transformers"
-    },
-    "type": "conference"
-  },
-  {
-    "id": "pub-10",
-    "title": "A Survey of In-Memory Computing Architectures for Machine Learning",
-    "authors": ["John Smith", "Alice Johnson"],
-    "venue": "Proceedings of the IEEE",
-    "year": 2023,
-    "abstract": "In-memory computing has emerged as a promising approach to address the memory wall problem in machine learning workloads. This survey provides a comprehensive overview of in-memory computing architectures, covering both analog and digital approaches across various memory technologies. We discuss design challenges, accuracy considerations, and future research directions.",
-    "tags": ["In-Memory Computing", "Machine Learning", "Survey", "Memory Technologies"],
-    "links": {
-      "pdf": "/papers/pieee-2023-imc-survey.pdf",
-      "doi": "https://doi.org/10.1109/xxxxxx"
-    },
-    "type": "journal"
+  "type": "Conference"
   }
 ]
