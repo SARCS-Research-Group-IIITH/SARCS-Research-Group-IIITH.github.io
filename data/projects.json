@@ -4,7 +4,7 @@
     "slug": "in-memory-computing",
     "title": "In-Memory Computing",
     "shortDescription": "Developing novel computing paradigms that perform computation directly within memory arrays to overcome the von Neumann bottleneck.",
-    "fullDescription": "In-memory computing (IMC) represents a paradigm shift in computer architecture by performing computations directly within memory arrays, eliminating costly data movement between memory and processing units. Our research focuses on developing efficient IMC architectures for machine learning workloads, exploring both analog and digital implementations using emerging non-volatile memory technologies such as ReRAM, PCM, and MRAM.",
+    "fullDescription": "In-memory computing (IMC) represents a paradigm shift in computer architecture by performing computations directly within memory arrays, eliminating costly data movement between memory and processing units. Our research focuses on developing efficient IMC architectures for machine learning workloads such as , exploring both analog and digital implementations using emerging non-volatile memory technologies such as ReRAM, PCM, and MRAM.",
     "image": "/images/research/in-memory-computing.png",
     "topics": [
       "Analog and digital in-memory computing architectures",

@@ -159,29 +159,6 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
           </ul>
         </section>
       )}
-
-      {/* Related Links Section */}
-      <section className="rounded-lg bg-surface-100 p-6 dark:bg-surface-800/50">
-        <h2 className="mb-4 text-lg font-semibold text-surface-900 dark:text-surface-50">
-          Explore More
-        </h2>
-        <div className="flex flex-wrap gap-4">
-          <Link
-            href="/publications"
-            className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300"
-          >
-            <FileText className="h-4 w-4" />
-            View Related Publications
-          </Link>
-          <Link
-            href="/people"
-            className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300"
-          >
-            <ExternalLink className="h-4 w-4" />
-            Meet the Team
-          </Link>
-        </div>
-      </section>
     </article>
   );
 }
