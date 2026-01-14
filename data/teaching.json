@@ -1,0 +1,58 @@
+{
+  "academicYears": [
+    {
+      "year": "2025-2026",
+      "semesters": [
+        {
+          "name": "Spring",
+          "courses": [
+            {
+              "code": "EC5.102",
+              "name": "Computer Organization",
+              "faculty": ["Priyesh Shukla"],
+              "link": null
+            }
+          ]
+        },
+        {
+          "name": "Monsoon",
+          "courses": [
+            {
+              "code": "EC5.101",
+              "name": "Digital Systems and Microcontrollers",
+              "faculty": ["Priyesh Shukla", "Aftab Hussain"],
+              "link": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year": "2024-2025",
+      "semesters": [
+        {
+          "name": "Spring",
+          "courses": [
+            {
+              "code": "EC5.102",
+              "name": "Computer Organization",
+              "faculty": ["Priyesh Shukla"],
+              "link": null
+            }
+          ]
+        },
+        {
+          "name": "Monsoon",
+          "courses": [
+            {
+              "code": "EC5.101",
+              "name": "Digital Systems and Microcontrollers",
+              "faculty": ["Priyesh Shukla", "Aftab Hussain"],
+              "link": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

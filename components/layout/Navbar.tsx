@@ -15,7 +15,7 @@ import { ThemeToggle } from './ThemeToggle';
 import type { NavItem } from '@/types';
 
 // Navigation items configuration
-// Order: Home, Research, Publications, Resources, Blog, Media, People, Contact
+// Order: Home, Research, Publications, Teaching, Blog, Media, People, Contact
 const navItems: NavItem[] = [
   { label: 'Home', href: '/' },
   {
@@ -29,7 +29,7 @@ const navItems: NavItem[] = [
     ],
   },
   { label: 'Publications', href: '/publications' },
-  { label: 'Resources', href: '/resources' },
+  { label: 'Teaching', href: '/teaching' },
   { label: 'Blogs', href: '/blog' },
   { label: 'Media', href: '/media' },
   { label: 'People', href: '/people' },

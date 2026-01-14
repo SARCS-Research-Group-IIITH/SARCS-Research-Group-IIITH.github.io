@@ -18,4 +18,4 @@ export * from './publications';
 export * from './people';
 export * from './media';
 export * from './blog';
-export * from './resources';
+export * from './teaching';
