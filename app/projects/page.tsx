@@ -17,7 +17,7 @@ const projects = projectsData as Project[];
 
 export const metadata: Metadata = {
   title: 'Research',
-  description: 'Explore our research areas including in-memory computing, RISC-V architectures, hardware accelerators, and AI systems.',
+  description: 'Explore our research areas including in-memory computing, RISC-V architectures, hardware accelerators, quantum computing, and AI systems.',
 };
 
 /**

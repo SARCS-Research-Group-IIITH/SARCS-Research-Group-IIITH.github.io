@@ -16,7 +16,7 @@
       "github": "https://github.com/BUAA-CI-LAB/Literatures-on-SRAM-based-CIM"
     },
     "status": "active",
-    "startYear": 2024
+    "startYear": 2025
   },
   {
     "id": "proj-riscv",
@@ -54,6 +54,22 @@
       "github": "https://github.com/ucb-bar/gemmini"
     },
     "status": "active",
-    "startYear": 2021
+    "startYear": 2025
+  }
+  ,{
+    "id": "proj-quantum",
+    "slug": "quantum-computing",
+    "title": "Quantum Computing",
+    "shortDescription": "Research on quantum computation, quantum machine learning, and circuit-level quantum AI accelerators.",
+    "fullDescription": " Quantum computing represents a new computing paradigm that exploits quantum mechanics principles such as superposition and entanglement to perform information processing beyond classical limits. Our research focuses on the design and simulation of quantum circuits and algorithms, with particular emphasis on quantum machine learning techniques for accelerating classical ML workloads and circuit-level approaches toward quantum AI accelerators. The work adopts a hardware-algorithm co-design perspective, leveraging hybrid quantum-classical methods and modern quantum software frameworks to explore scalable, application driven quantum computation.",
+    "image": "/images/research/Quantum-Computing.jpeg",
+    "topics": [
+      "Quantum circuits and gate level design",
+      "Quantum machine learning for classical ML acceleration",
+      "Quantum AI and accelerator-oriented circuit design"
+    ],
+    "links": {},
+    "status": "active",
+    "startYear": 2025
   }
 ]
