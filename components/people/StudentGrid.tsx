@@ -65,6 +65,8 @@ export function StudentCard({ student }: StudentCardProps) {
               height={96}
               className="h-full w-full object-cover"
               style={{ objectPosition: student.photoPosition || '50% 40%' }}
+              loading="lazy"
+              sizes="96px"
             />
           ) : (
             <div className="flex h-full w-full items-center justify-center text-2xl font-bold text-surface-400 dark:text-surface-500">
@@ -159,6 +161,8 @@ export function StudentListCompact({ students }: StudentListCompactProps) {
                 height={48}
                 className="h-full w-full object-cover"
                 style={{ objectPosition: student.photoPosition || '50% 40%' }}
+                loading="lazy"
+                sizes="48px"
               />
             ) : (
               <div className="flex h-full w-full items-center justify-center text-sm font-bold text-surface-400 dark:text-surface-500">

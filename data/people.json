@@ -13,8 +13,7 @@
         "email": "priyesh.shukla@iiit.ac.in",
         "linkedin": "https://www.linkedin.com/in/priyesh-shukla-97b278218/",
         "googleScholar": "https://scholar.google.com/citations?hl=en&user=on_nvPYAAAAJ&view_op=list_works&sortby=pubdate",
-        "github": "https://github.com/priyeshshukla",
-        "website": "https://priyeshshukla.github.io/"
+        "github": "https://github.com/priyeshshukla"
       }
     }
   ],
@@ -22,7 +21,7 @@
     {
       "id": "phd-1",
       "name": "Sirisha",
-      "photo": "/images/people/placeholder.svg",
+      "photo": "/images/people/Sirisha_PhD.jpeg",
       "photoPosition": "50% 40%",
       "role": "phd",
       "designation": "PhD Student",

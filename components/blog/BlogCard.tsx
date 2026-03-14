@@ -44,6 +44,8 @@ export function BlogCard({ post, imagePosition = 'left' }: BlogCardProps) {
               alt={post.title}
               fill
               className="object-cover"
+              sizes="(max-width: 768px) 100vw, 320px"
+              loading="lazy"
             />
           ) : (
             <div className="flex h-full min-h-[16rem] w-full items-center justify-center">

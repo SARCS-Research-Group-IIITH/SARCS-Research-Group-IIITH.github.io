@@ -22,5 +22,14 @@
     "caption": "Team Lunch",
     "category": "event",
     "date": "2025-12-25"
+  },
+  {
+    "id": "media-4",
+    "src": "/images/gallery/RnD_SARCS.jpeg",
+    "alt": "RnD Showcase 2026",
+    "caption": "RnD showcase 2026",
+    "category": "event",
+    "date": "2026-01-15",
+    "event": "RnD showcase 2026"
   }
 ]

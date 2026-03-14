@@ -63,5 +63,60 @@
     "doi": "https://ieeexplore.ieee.org/abstract/document/9180701/"
   },
   "type": "conference"
+  },
+  {
+    "id": "pub-6",
+    "title": "ProbCIMs: Compute-in-Memory Paradigms for Robust and Efficient Probabilistic Computing & AI",
+    "authors": ["Priyesh Shukla", "Amit Ranjan Trivedi", "Siddarth Gottumukkula", "M P Samartha"],
+    "venue": "IEEE International Conference on Intelligent Computing and Systems at the Edge (ICEdge)",
+    "year": 2025,
+    "abstract": "This work presents ProbCIMs, a compute-in-memory driven framework for robust and efficient probabilistic computing and AI workloads at the edge.",
+    "tags": ["In-Memory Computing", "Probabilistic Computing", "Edge AI"],
+    "links": {
+      "googleScholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=on_nvPYAAAAJ&citation_for_view=on_nvPYAAAAJ:TQgYirikUcIC"
+    },
+    "type": "conference"
+  },
+  {
+    "id": "pub-7",
+    "title": "Semantic-Guided 3D Gaussian Splatting for Transient Object Removal",
+    "authors": ["A Prabakaran", "Priyesh Shukla"],
+    "venue": "arXiv preprint arXiv:2602.15516",
+    "year": 2026,
+    "abstract": "This preprint introduces a semantic-guided 3D Gaussian Splatting pipeline to remove transient objects and improve scene consistency in reconstructed environments.",
+    "tags": ["Computer Vision", "3D Reconstruction", "AI Systems"],
+    "links": {
+      "arxiv": "https://arxiv.org/abs/2602.15516",
+      "googleScholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=on_nvPYAAAAJ&citation_for_view=on_nvPYAAAAJ:HDshCWvjkbEC"
+    },
+    "type": "preprint"
+  },
+  {
+    "id": "pub-8",
+    "title": "Bidirectional Quantum Processor Interfacing by a 4-Kelvin Analog Signal Chain for Superconducting Qubit Control and Quantum State Readout",
+    "authors": ["D RV", "L Kanawat", "Priyesh Shukla"],
+    "venue": "arXiv preprint arXiv:2602.14165",
+    "year": 2026,
+    "abstract": "This work proposes a bidirectional 4 K analog signal-chain interface for superconducting qubit control and readout, enabling tighter coupling between cryogenic electronics and quantum processors.",
+    "tags": ["Quantum Computing", "Cryogenic Electronics", "Hardware Systems"],
+    "links": {
+      "arxiv": "https://arxiv.org/abs/2602.14165",
+      "googleScholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=on_nvPYAAAAJ&citation_for_view=on_nvPYAAAAJ:mB3voiENLucC"
+    },
+    "type": "preprint"
+  },
+  {
+    "id": "pub-9",
+    "title": "TernaryLM: Memory-Efficient Language Modeling via Native 1-Bit Quantization with Adaptive Layer-wise Scaling",
+    "authors": ["N Nargund", "Priyesh Shukla"],
+    "venue": "arXiv preprint arXiv:2602.07374",
+    "year": 2026,
+    "abstract": "TernaryLM introduces a memory-efficient language modeling approach with native 1-bit quantization and adaptive layer-wise scaling to retain quality while minimizing footprint.",
+    "tags": ["LLMs", "Model Compression", "Edge AI"],
+    "links": {
+      "arxiv": "https://arxiv.org/abs/2602.07374",
+      "googleScholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=on_nvPYAAAAJ&citation_for_view=on_nvPYAAAAJ:-f6ydRqryjwC"
+    },
+    "type": "preprint"
   }
 ]

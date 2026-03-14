@@ -38,6 +38,8 @@ export function FacultyCard({ faculty }: FacultyCardProps) {
                 height={192}
                 className="h-full w-full object-cover"
                 style={{ objectPosition: faculty.photoPosition || '50% 40%' }}
+                sizes="192px"
+                priority
               />
             ) : (
               <div className="flex h-full w-full items-center justify-center text-4xl font-bold text-surface-400 dark:text-surface-500">

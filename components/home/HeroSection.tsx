@@ -6,8 +6,6 @@
  */
 
 import Image from 'next/image';
-import { Button } from '@/components/ui';
-import { ArrowRight } from 'lucide-react';
 
 interface HeroSectionProps {
   labName: string;
@@ -29,12 +27,18 @@ interface HeroSectionProps {
  * - Subtle gradient background
  */
 export function HeroSection({ labName, fullName, mission, logoSrc, backgroundImage = '/images/bg_img.png' }: HeroSectionProps) {
+  const resolvedLogoSrc = logoSrc && logoSrc !== '/images/logo.svg' ? logoSrc : '/images/SARCS_Logo.png';
+
   return (
     <section className="relative overflow-hidden min-h-[60vh] flex items-center">
       {/* Background image with overlay */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
+      <Image
+        src={backgroundImage}
+        alt="SARCS Lab hero background"
+        fill
+        priority
+        className="object-cover"
+        sizes="100vw"
       />
       {/* Dark overlay for better text readability */}
       <div className="absolute inset-0 bg-gradient-to-b from-surface-900/80 via-surface-900/70 to-surface-900/90 dark:from-surface-950/90 dark:via-surface-950/80 dark:to-surface-950/95" />
@@ -43,7 +47,15 @@ export function HeroSection({ labName, fullName, mission, logoSrc, backgroundIma
         <div className="mx-auto max-w-4xl text-center">
           {/* Lab Logo */}
           <div className="mb-8 flex justify-center">
-            <Image src="/images/SARCS_Logo.png" alt="SARCS Logo" width={128} height={128} className="h-24 w-auto md:h-32" priority />
+            <Image
+              src={resolvedLogoSrc}
+              alt="SARCS Logo"
+              width={128}
+              height={128}
+              className="h-24 w-auto md:h-32"
+              priority
+              sizes="128px"
+            />
           </div>
 
           {/* Lab Name */}

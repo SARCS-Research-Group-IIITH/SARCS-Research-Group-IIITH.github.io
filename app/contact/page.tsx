@@ -15,6 +15,7 @@ import openingsData from '@/data/openings.json';
 import labInfoData from '@/data/lab-info.json';
 
 const openings = openingsData as Opening[];
+const collaborationOpenings = openings.filter((opening) => opening.type === 'Collaboration' && opening.isOpen);
 const labInfo = labInfoData.lab;
 
 export const metadata: Metadata = {
@@ -64,7 +65,12 @@ export default function ContactPage() {
             title="Join Our Team"
             align="center"
           />
-          <OpeningsSection openings={openings} />
+          {/* Keep full openings list logic for future re-enable */}
+          {/* <OpeningsSection openings={openings} /> */}
+          <OpeningsSection openings={collaborationOpenings} />
+          <p className="mt-6 text-center text-sm text-surface-600 dark:text-surface-400">
+            Interested students with relevant qualifications may apply. Applications and acceptance are on a rolling basis.
+          </p>
         </div>
       </Section>
     </>

@@ -40,6 +40,8 @@ export function AffiliationsSection({ affiliations }: AffiliationsSectionProps) 
               height={160}
               className="max-h-32 w-auto object-contain bg-transparent shadow-none transition-transform rounded-2xl"
               style={{ background: 'none' }}
+              loading="lazy"
+              sizes="(max-width: 768px) 40vw, (max-width: 1200px) 20vw, 220px"
             />
           ) : (
             <div className="flex h-16 w-32 items-center justify-center rounded-lg bg-surface-200 text-sm font-medium text-surface-600 dark:bg-surface-700 dark:text-surface-300">
@@ -77,6 +79,8 @@ export function AffiliationLogo({ affiliation }: AffiliationLogoProps) {
         width={160}
         height={64}
         className="h-16 w-auto object-contain"
+        loading="lazy"
+        sizes="160px"
       />
     </a>
   );

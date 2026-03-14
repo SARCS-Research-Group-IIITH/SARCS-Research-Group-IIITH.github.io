@@ -45,6 +45,8 @@ export function ProjectCard({ project, variant = 'default' }: ProjectCardProps) 
                   alt={project.title}
                   fill
                   className="object-cover"
+                  sizes="48px"
+                  loading="lazy"
                 />
               ) : (
                 // PLACEHOLDER: Replace with actual project image
@@ -82,6 +84,8 @@ export function ProjectCard({ project, variant = 'default' }: ProjectCardProps) 
                 alt={project.title}
                 fill
                 className="object-cover transition-transform group-hover:scale-105"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                loading="lazy"
               />
             ) : (
               // PLACEHOLDER: Replace with actual project image

@@ -55,8 +55,8 @@
     },
     "status": "active",
     "startYear": 2025
-  }
-  ,{
+  },
+  {
     "id": "proj-quantum",
     "slug": "quantum-computing",
     "title": "Quantum Computing",
@@ -71,5 +71,41 @@
     "links": {},
     "status": "active",
     "startYear": 2025
+  },
+  {
+    "id": "proj-edge-ai",
+    "slug": "edge-ai",
+    "title": "Edge AI",
+    "shortDescription": "Designing efficient edge AI systems with hardware-software co-design for low-latency, low-power inference in real-world deployments.",
+    "fullDescription": "Our Edge AI research develops architectures, runtimes, and compiler strategies for deploying AI models under strict constraints in power, latency, and memory. We investigate quantization-aware pipelines, sparsity-aware execution, and accelerator-friendly model transformations to support robust on-device intelligence for sensing, robotics, and embedded systems.",
+    "image": "/images/research/Riscv-architectures.png",
+    "topics": [
+      "TinyML and on-device inference",
+      "Model compression and quantization",
+      "Edge-aware accelerator co-design",
+      "Compiler and runtime optimizations"
+    ],
+    "links": {
+      "github": "https://github.com/riscv"
+    },
+    "status": "active",
+    "startYear": 2026
+  },
+  {
+    "id": "proj-photonics",
+    "slug": "photonics",
+    "title": "Photonics",
+    "shortDescription": "Exploring photonic computing pathways for high-throughput and energy-efficient AI and signal processing workloads.",
+    "fullDescription": "Photonics-based computing offers the potential for ultra-high bandwidth and improved energy efficiency for selected compute kernels. Our work studies photonic building blocks, architecture-level integration strategies, and system-level co-design to identify where photonics can accelerate next-generation AI, communication, and sensing workloads.",
+    "image": "/images/research/Quantum-Computing.jpeg",
+    "topics": [
+      "Photonic compute primitives",
+      "Electro-photonic co-design",
+      "High-bandwidth interconnects",
+      "AI acceleration using photonic pathways"
+    ],
+    "links": {},
+    "status": "active",
+    "startYear": 2026
   }
 ]

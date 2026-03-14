@@ -2,7 +2,7 @@
   "lab": {
     "fullname": "",
     "name": "Sustainable, Advanced and Robust Computing Systems",
-    "logo": "/images/logo.svg",
+    "logo": "/images/SARCS_Logo.png",
     "mission": "The SARCS Lab is dedicated to advancing the frontiers of computer architecture, hardware-software co-design, and emerging computing paradigms like photonics, quantum computing and in-memory computing. Our research spans RISC-V architectures, hardware accelerators, compute-in-memory, and AI systems, with a focus on developing efficient, scalable, and sustainable computing solutions for next-generation applications.",
     "address": [
       "A5-318, Vindhya Building,",
@@ -28,6 +28,46 @@
         "name": "CVEST",
         "logo": "/images/affiliations/CVEST_Logo.png",
         "url": "https://cvest.iiit.ac.in/"
+      },
+      {
+        "name": "Google",
+        "logo": "/images/affiliations/google-logo-9808.png",
+        "url": "https://research.google/"
+      },
+      {
+        "name": "Qualcomm",
+        "logo": "/images/affiliations/Qualcomm.svg",
+        "url": "https://www.qualcomm.com/"
+      },
+      {
+        "name": "Andes",
+        "logo": "/images/affiliations/andes.png",
+        "url": "https://www.andestech.com/"
+      },
+      {
+        "name": "Bhashini",
+        "logo": "/images/affiliations/bhashini.png",
+        "url": "https://bhashini.gov.in/"
+      },
+      {
+        "name": "Department of Science & Technology, India",
+        "logo": "/images/affiliations/dst-logo1.jpg",
+        "url": "https://dst.gov.in/"
+      },
+      {
+        "name": "SampiGAY Semiconductors",
+        "logo": "/images/affiliations/sampigay.png",
+        "url": "https://www.sampigay.com/"
+      },
+      {
+        "name": "Sophrosyne Technologies",
+        "logo": "/images/affiliations/sophrosyne-technologies.png",
+        "url": "https://sophrosynetechnologies.com/"
+      },
+      {
+        "name": "University of Illinois Chicago",
+        "logo": "/images/affiliations/uic.webp",
+        "url": "https://www.uic.edu/"
       }
     ]
   }

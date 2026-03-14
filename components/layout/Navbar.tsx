@@ -26,8 +26,10 @@ const navItems: NavItem[] = [
       { label: 'All Research Areas', href: '/projects', isHeader: true },
       { label: 'In-Memory Computing', href: '/projects/in-memory-computing', indent: true },
       { label: 'RISC-V Architectures', href: '/projects/riscv-architectures', indent: true },
-          { label: 'Hardware Accelerators', href: '/projects/hardware-accelerators', indent: true },
-          { label: 'Quantum Computing', href: '/projects/quantum-computing', indent: true },
+      { label: 'Hardware Accelerators', href: '/projects/hardware-accelerators', indent: true },
+      { label: 'Quantum Computing', href: '/projects/quantum-computing', indent: true },
+      { label: 'Edge AI', href: '/projects/edge-ai', indent: true },
+      { label: 'Photonics', href: '/projects/photonics', indent: true },
     ],
   },
   { label: 'Publications', href: '/publications' },
@@ -61,6 +63,8 @@ export function Navbar() {
       setIsScrolled(window.scrollY > 10);
     };
 
+    // Sync initial state on mount (important on page refresh with restored scroll).
+    handleScroll();
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -104,13 +108,27 @@ export function Navbar() {
             href="/"
             className="flex items-center gap-2 text-lg font-semibold text-surface-900 hover:no-underline dark:text-surface-50"
           >
-            <Image src="/images/SARCS_Logo.png" alt="SARCS Logo" width={48} height={48} className="h-12 w-auto" priority />
+            <Image
+              src="/images/SARCS_Logo.png"
+              alt="SARCS Logo"
+              width={48}
+              height={48}
+              className="h-12 w-auto"
+              priority
+              sizes="48px"
+            />
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden items-center gap-1 lg:flex">
             {navItems.map((item) => (
-              <div key={item.href} className="relative" ref={item.children ? dropdownRef : undefined}>
+              <div
+                key={item.href}
+                className="relative"
+                ref={item.children ? dropdownRef : undefined}
+                onMouseEnter={item.children ? () => setIsDropdownOpen(true) : undefined}
+                onMouseLeave={item.children ? () => setIsDropdownOpen(false) : undefined}
+              >
                 {item.children ? (
                   // Dropdown menu item
                   <>
@@ -132,7 +150,7 @@ export function Navbar() {
                     
                     {/* Dropdown panel */}
                     {isDropdownOpen && (
-                      <div className="absolute left-0 top-full mt-1 w-56 animate-slide-down rounded-lg border border-surface-200 bg-white py-2 shadow-lg dark:border-surface-700 dark:bg-surface-800">
+                      <div className="absolute left-0 top-full w-56 animate-slide-down rounded-lg border border-surface-200 bg-white py-2 shadow-lg dark:border-surface-700 dark:bg-surface-800">
                         {item.children.map((child) => (
                           <Link
                             key={child.href}

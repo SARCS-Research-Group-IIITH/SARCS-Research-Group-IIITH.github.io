@@ -158,6 +158,7 @@ export function Lightbox({
             }`}
             onLoad={() => setIsLoading(false)}
             priority
+            sizes="90vw"
           />
         </div>
 

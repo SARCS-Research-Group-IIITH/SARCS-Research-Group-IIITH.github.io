@@ -90,6 +90,7 @@ export function GalleryGrid({ items }: GalleryGridProps) {
             item={item}
             categoryColor={categoryColors[item.category] || 'neutral'}
             onClick={() => lightbox.open(index)}
+            priority={index < 3}
           />
         ))}
       </div>
@@ -125,9 +126,10 @@ interface GalleryItemProps {
   item: MediaItem;
   categoryColor: 'primary' | 'accent' | 'success' | 'warning' | 'error' | 'neutral';
   onClick: () => void;
+  priority?: boolean;
 }
 
-export function GalleryItem({ item, categoryColor, onClick }: GalleryItemProps) {
+export function GalleryItem({ item, categoryColor, onClick, priority = false }: GalleryItemProps) {
   return (
     <button
       onClick={onClick}
@@ -140,6 +142,8 @@ export function GalleryItem({ item, categoryColor, onClick }: GalleryItemProps) 
         fill
         className="object-cover transition-transform group-hover:scale-105"
         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+        priority={priority}
+        loading={priority ? 'eager' : 'lazy'}
       />
 
       {/* Overlay with caption */}

@@ -68,7 +68,15 @@ export function Footer() {
               href="/"
               className="mb-3 flex items-center gap-2 text-lg font-semibold text-surface-900 hover:no-underline dark:text-surface-50"
             >
-              <Image src="/images/SARCS_Logo.png" alt="SARCS Logo" width={48} height={48} className="h-10 w-auto" />
+              <Image
+                src="/images/SARCS_Logo.png"
+                alt="SARCS Logo"
+                width={48}
+                height={48}
+                className="h-10 w-auto"
+                loading="lazy"
+                sizes="48px"
+              />
             </Link>
             <p className="mb-3 text-sm text-surface-600 dark:text-surface-400">
               {labInfo.fullName}
